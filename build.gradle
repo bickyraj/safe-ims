@@ -25,6 +25,12 @@ subprojects {
         }
     }
 
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.ai:spring-ai-bom:1.0.3"
+        }
+    }
+
     dependencies {
         implementation 'org.modelmapper:modelmapper:3.2.6'
         compileOnly 'org.projectlombok:lombok'

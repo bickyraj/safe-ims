@@ -14,5 +14,11 @@ spring:
         format_sql: true
   liquibase:
     change-log: classpath:db/changelog/changelog-master.yaml
+  ai:
+    mcp:
+      server:
+        enabled: true
+        name: ims-server
+        version: 1.0.0
 server:
   port: 8087
