@@ -1,0 +1,52 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Spring Boot
+*.jar
+*.war
+*.ear
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+!.idea/runConfigurations/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Environment / secrets
+.env
+.env.*
+*.env
+application-local.yml
+application-local.properties
+application-secret.yml
+*-secret.yml
+
+# Logs
+*.log
+logs/
+
+# Java
+*.class
+
+# Package files
+*.jar
+*.war
+
+# Compiled output per module
+**/build/
+**/out/
