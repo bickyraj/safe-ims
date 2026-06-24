@@ -3,7 +3,6 @@ package com.safepay.ims_app.tools;
 import com.safepay.ims_supplier.api.SupplierApi;
 import com.safepay.ims_supplier.api.dtos.CreateSupplierDTO;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
 
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Component;
@@ -13,7 +12,6 @@ import org.springframework.stereotype.Component;
 public class SupplierTools {
 
 	private final SupplierApi supplierApi;
-	private final ModelMapper modelMapper;
 
 	@Tool(
 			name = "create_supplier",
