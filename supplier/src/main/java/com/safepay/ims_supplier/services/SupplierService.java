@@ -15,4 +15,8 @@ public class SupplierService {
 		supplierRepository.create(supplier);
 		return true;
 	}
+
+	public void deleteSupplierById(Long id) {
+		supplierRepository.delete(id);
+	}
 }

@@ -25,4 +25,15 @@ public class SupplierTools {
                 Supplier Name: %s
                 """;
 	}
+
+	@Tool(
+			name = "delete_supplier",
+			description = "Delete a supplier by its id in the IMS system."
+	)
+	public String deleteSupplier(Long id) {
+		supplierApi.deleteSupplier(id);
+		return """
+                Supplier deleted successfully.
+                """;
+	}
 }

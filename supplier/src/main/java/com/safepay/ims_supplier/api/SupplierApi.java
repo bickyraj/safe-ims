@@ -22,4 +22,8 @@ public class SupplierApi {
 		Supplier supplier = modelMapper.map(createSupplierDTO, Supplier.class);
 		supplierService.createSupplier(supplier);
 	}
+
+	public void deleteSupplier(Long id) {
+		supplierService.deleteSupplierById(id);
+	}
 }

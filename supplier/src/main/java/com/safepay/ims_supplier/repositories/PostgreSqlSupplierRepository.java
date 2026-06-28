@@ -31,4 +31,9 @@ public class PostgreSqlSupplierRepository implements SupplierRepository {
 				.map(supplierModel -> modelMapper.map(supplierModel, Supplier.class))
 				.collect(Collectors.toSet());
 	}
+
+	@Override
+	public void delete(Long supplierId) {
+		jpaSupplierRepository.deleteById(supplierId);
+	}
 }
